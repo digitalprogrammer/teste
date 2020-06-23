@@ -1,0 +1,27 @@
+<div *ngIf="selectedClient">
+  <h2>Update the User</h2>
+  <label
+    >Cpf:
+    <input [(ngModel)]="selectedClient.cpf" placeholder="cpf" />
+  </label>
+  <label
+    >Name:
+    <input [(ngModel)]="selectedClient.nome" placeholder="name" />
+  </label>
+  <label
+    >Sexo:
+    <input [(ngModel)]="selectedClient.sexo" placeholder="sexo" />
+  </label>
+  <label
+    >Date:
+    <input [(ngModel)]="selectedClient.dat_nasc" placeholder="date" />
+  </label>
+  <label
+    >Email:
+    <input [(ngModel)]="selectedClient.email" placeholder="email" />
+  </label>
+  <label
+    >Phone:
+    <input [(ngModel)]="selectedClient.phone" placeholder="phone" />
+  </label>
+</div>

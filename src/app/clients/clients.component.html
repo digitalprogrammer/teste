@@ -1,0 +1,15 @@
+<div>
+  <h2>Clients</h2>
+  <ul class="client">
+    <li
+      (click)="onSelect(client)"
+      [class.selected]="client === selectedClient"
+      *ngFor="let client of clients; let i = index"
+    >
+      <span>{{ client.nome }}</span>
+    </li>
+  </ul>
+  <app-client [client]="selectedClient"></app-client>
+  <app-update-client [selectedClient]="selectedClient"></app-update-client>
+  <app-create-client></app-create-client>
+</div>
